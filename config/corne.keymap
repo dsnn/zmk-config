@@ -46,15 +46,13 @@
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
-MAKE_HRM(hml_repeat, &kp, &key_repeat, KEYS_R THUMBS)  // used for HRM-combo
-
 ZMK_LAYER(base,
 // ╭─────────────┬────────────┬────────────┬────────────┬────────────┬─────────────╮   ╭─────────────┬─────────────┬────────────┬────────────┬────────────┬─────────────╮
-      &kp TAB      &kp Q        &kp W         &kp E         &kp R          &kp T          &kp Y         &kp U         &kp I         &kp O       &kp P            &sv_ae        
+      &kp TAB      &kp Q        &kp W         &kp E         &kp R          &kp T          &kp Y         &kp U         &kp I         &kp O         &kp P       &kp A
 // ├─────────────┼────────────┬────────────┼────────────┼────────────┼─────────────┤   ├─────────────┼─────────────┼────────────┼────────────┼────────────┼─────────────┤
-      &kp LCTRL    &hml LGUI A  &hml LALT S   &hml LCTRL D  &hml LSHFT F   &kp G          &kp H         &hmr RSHFT J  &hmr LCTRL K  &hmr LALT L &sv_oe           &sv_ao
+      &kp LCTRL    &hml LGUI A  &hml LALT S   &hml LCTRL D  &hml LSHFT F   &kp G          &kp H       &hmr RSHFT J   &hmr LCTRL K  &hmr LALT L    &kp A       &kp O
 // ├─────────────┼────────────┬────────────┼────────────┼────────────┼─────────────┤   ├─────────────┼─────────────┼────────────┼────────────┼────────────┤─────────────┤
-      &kp LSHIFT    &kp Z       &kp X         &kp C         &kp V          &kp B          &kp N         &kp M         &kp COMMA     &kp DOT     &kp SEMI         &SLASH 
+      &kp LSHIFT    &kp Z       &kp X         &kp C         &kp V          &kp B          &kp N         &kp M         &kp COMMA     &kp DOT       &kp SEMI    &kp SLASH 
 // ╰─────────────┼────────────┬────────────┼────────────┼────────────┼─────────────┤   ├─────────────┼─────────────┼────────────┼────────────┼────────────┤─────────────┤
                                               &kp ESC     &kp SPACE        &kp TAB        &kp DEL       &kp RET       &kp LALT 
 //                                         ╰────────────┴────────────┴─────────────╯   ╰─────────────┴─────────────┴────────────╯

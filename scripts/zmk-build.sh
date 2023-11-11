@@ -21,15 +21,11 @@ function echo-skip { printf "\r\033[2K\033[38;05;240m[SKIP]\033[0m %s\n" "$*"; }
 function echo-ok { printf "\r\033[2K\033[0;32m[OK]\033[0m %s\n" "$*"; }
 function echo-fail { printf "\r\033[2K\033[0;31m[FAIL]\033[0m %s\n" "$*"; }
 
-# WEST_COMMAND="west build -d build/left -b nice_nano_v2 -- -DZMK_CONFIG=../../zmk-config/config/ -DSHIELD=corne_left"
-
-# TODO: fancy output w/ tput bold, setaf 3/4, tput reset
-
-echo-info "Build zmk firmware"
-
 # +--------------------+
 # | BUILD THE FIRMWARE |
 # +--------------------+
+
+echo-info "Build zmk firmware"
 
 DOCKER_RUN_CMD="docker run --rm \
 --mount type=bind,source=$HOST_ZMK_DIR,target=$DOCKER_ZMK_DIR \
@@ -93,9 +89,8 @@ compile_board() {
 
 cd "$HOST_ZMK_DIR/app"
 
-# west build -d build/left -b nice_nano_v2 -- -DZMK_CONFIG=../../zmk-config/config/ -DSHIELD=corne_left
-# /builds/corne_nice_nano_v2_left.u2
-# /builds/corne_nice_nano_v2_right.u2
+# corne_nice_nano_v2_left.uf2
+# corne_nice_nano_v2_right.uf2
 
 for board in left right; do
 	compile_board $board

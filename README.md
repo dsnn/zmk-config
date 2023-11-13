@@ -8,6 +8,7 @@ This is my custom corne low profile keyboard ZMK firmware configuration.
 
 ## Todo
 
+- build script catch west build errors
 - use dockerfile with custom .bashrc (debug) (?)
 - faster builds `west build -d build/left` after first run (?)
 

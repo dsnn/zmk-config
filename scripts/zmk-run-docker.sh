@@ -57,7 +57,7 @@ done
 # Set defaults
 [[ -z $ZEPHYR_VERSION ]] && ZEPHYR_VERSION="3.2"
 
-[[ -z $HOST_ZMK_DIR ]] && HOST_ZMK_DIR="/Users/dsn/projects/zmk/zmk"
+[[ -z $HOST_ZMK_DIR ]] && HOST_ZMK_DIR="/Users/dsn/projects/zmk/zmkfirmware/"
 [[ -z $HOST_CONFIG_DIR ]] && HOST_CONFIG_DIR="/Users/dsn/projects/zmk/zmk-config"
 
 [[ -z $DOCKER_ZMK_DIR ]] && DOCKER_ZMK_DIR="/workspace/zmk"

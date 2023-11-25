@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #include "helper.h"
-#include "keys_sv.h"
-#include "keypos_42keys.h"
+#include "svkeys.h"
+#include "keypos.h"
 
 /*
  +--------------------+
